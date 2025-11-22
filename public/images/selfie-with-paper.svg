@@ -1,0 +1,8 @@
+<svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="238" height="178" rx="12" fill="#FDF4FF" stroke="#F5D0FE" stroke-width="2" stroke-dasharray="6 6"/>
+  <circle cx="90" cy="72" r="28" fill="#E879F9" opacity="0.85"/>
+  <rect x="120" y="70" width="90" height="60" rx="8" fill="#FFFFFF" stroke="#C084FC" stroke-width="2"/>
+  <line x1="132" y1="86" x2="198" y2="86" stroke="#DDD6FE" stroke-width="4" stroke-linecap="round"/>
+  <line x1="132" y1="104" x2="198" y2="104" stroke="#DDD6FE" stroke-width="4" stroke-linecap="round"/>
+  <text x="120" y="160" text-anchor="middle" font-size="12" fill="#6B21A8">Show blank A4 fully in frame</text>
+</svg>

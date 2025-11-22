@@ -1,0 +1,103 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 210 15% 95%;
+    --foreground: 210 29% 6%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 6%;
+
+    --primary: 38 100% 51%;
+    --primary-foreground: 25 90% 10%;
+
+    --secondary: 210 20% 92%;
+    --secondary-foreground: 210 25% 20%;
+
+    --muted: 210 16% 87%;
+    --muted-foreground: 210 12% 30%;
+
+    --accent: 38 95% 80%;
+    --accent-foreground: 25 90% 18%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 15% 85%;
+    --input: 210 15% 85%;
+    --ring: 38 100% 51%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 15% 95%;
+    --sidebar-foreground: 25 20% 20%;
+    --sidebar-primary: 223 32% 15%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 213 23% 24%;
+    --sidebar-accent-foreground: 38 100% 51%;
+    --sidebar-border: 215 16% 72%;
+    --sidebar-ring: 38 100% 51%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 226 100% 64%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 226 35% 22%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 226 100% 64%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+}
